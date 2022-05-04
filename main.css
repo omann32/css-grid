@@ -24,9 +24,22 @@
 .prof-pic {
   grid-area: prof-pic;
 }
+#profilePic {
+  width: 100%;
+  height: auto;
+}
 
 .prof-info {
   grid-area: prof-info;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 5vw;
+}
+
+.prof-info > h1 {
+  align-self: center;
 }
 
 .posts {
