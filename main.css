@@ -2,7 +2,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr 3fr;
+  grid-template-rows: 10vh 2fr 3fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -13,6 +13,12 @@
 
 .navbar {
   grid-area: navbar;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 .prof-pic {
@@ -25,4 +31,9 @@
 
 .posts {
   grid-area: posts;
+}
+
+.navbar > a {
+  color: white;
+  text-decoration: none;
 }
